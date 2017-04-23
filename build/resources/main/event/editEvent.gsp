@@ -69,8 +69,13 @@
                                     <div class="col-sm-10" style="margin-top: 10px;">
                                       <select name="place" class="selectpicker" data-live-search="true">
                                         <g:each var="place" in="${places}">
-                                          <g:if test="${event.place.id == place.id}">
-                                            <option value="${place.id}" selected>${place.placeName}</option>
+                                          <g:if test="${event.place}">
+                                            <g:if test="${event.place.id == place.id}">
+                                              <option value="${place.id}" selected>${place.placeName}</option>
+                                            </g:if>
+                                            <g:else>
+                                              <option value="${place.id}">${place.placeName}</option>
+                                            </g:else>
                                           </g:if>
                                           <g:else>
                                             <option value="${place.id}">${place.placeName}</option>

@@ -123,7 +123,9 @@ class ActivityTypeController {
     @Secured(['ROLE_USER'])
     def createActivity() {
 
-        [test: 'test']
+        def user = springSecurityService.currentUser
+
+        [user: user]
     }
 
     @Secured(['ROLE_USER'])

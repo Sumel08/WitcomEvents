@@ -12,6 +12,7 @@ class People {
 	Place provenance
 
 	static hasMany = [peopleSocialNetworks: PeopleSocialNetworks, activityPeople: ActivityPeople]
+    static belongsTo = [event: Event]
 
 	static mapping = {
         id generator: 'identity'

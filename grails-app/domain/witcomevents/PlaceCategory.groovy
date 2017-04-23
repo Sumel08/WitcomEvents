@@ -6,6 +6,7 @@ class PlaceCategory {
 	String description
 
 	static hasMany = [places: Place]
+	static belongsTo = [event: Event]
 
 	static mapping = {
         id generator: 'identity'
