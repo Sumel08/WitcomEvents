@@ -1,0 +1,2 @@
+//# sourceMappingURL=bServerSide.js.map
+oTest.fnStart("bServerSide");$(document).ready(function(){var a=$("#example").dataTable({aaData:gaaData}).fnSettings();oTest.fnTest("Server side is off by default",null,function(){return 0==a.oFeatures.bServerSide});oTest.fnComplete()});

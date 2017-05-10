@@ -1,0 +1,4 @@
+//# sourceMappingURL=fnDeleteRow.js.map
+oTest.fnStart("fnDeleteRow");
+$(document).ready(function(){var a=$("#example").dataTable(),b=a.fnSettings();oTest.fnTest("Check that the default data is sane",null,function(){return 3==b.asDataSearch.join(" ").match(/4.0/g).length});oTest.fnTest("Remove the first data row, and check that hte search data has been updated",function(){a.fnDeleteRow(0)},function(){return 2==b.asDataSearch.join(" ").match(/4.0/g).length});oTest.fnTest("Check that the info element has been updated",null,function(){return"Showing 1 to 10 of 56 entries"==$("#example_info").html()});
+oTest.fnComplete()});

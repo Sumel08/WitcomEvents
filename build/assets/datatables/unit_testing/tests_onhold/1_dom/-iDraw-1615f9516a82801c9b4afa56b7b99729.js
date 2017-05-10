@@ -1,0 +1,4 @@
+//# sourceMappingURL=-iDraw.js.map
+oTest.fnStart("iDraw - check that iDraw increments for each draw");
+$(document).ready(function(){var a=$("#example").dataTable(),b=a.fnSettings();oTest.fnTest("After first draw, iDraw is 1",null,function(){return 1==b.iDraw});oTest.fnTest("After second draw, iDraw is 2",function(){a.fnDraw()},function(){return 2==b.iDraw});oTest.fnTest("After sort",function(){a.fnSort([[1,"asc"]])},function(){return 3==b.iDraw});oTest.fnTest("After filter",function(){a.fnFilter("gecko")},function(){return 4==b.iDraw});oTest.fnTest("After another filter",function(){a.fnFilter("gec")},
+function(){return 5==b.iDraw});oTest.fnComplete()});

@@ -274,9 +274,19 @@ class PlaceController {
         redirect(action: "places")
     }
 
+    @Secured(['permitAll'])
     def getPlaces() {
-        def places = Place.findAll()
 
-        render places as JSON
+        ArrayList<String> nothing = new ArrayList<>()
+
+        try {
+            def placeCategories = PlaceCategory.findAllByEvent(Event.findByCode(params.id))
+            def places = Place.findAllByPlaceCategoryInList(placeCategories)
+
+            render places as JSON
+        } catch (Exception e) {
+            println(e)
+            render nothing as JSON
+        }
     }
 }

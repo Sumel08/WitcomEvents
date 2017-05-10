@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"bootstrap-wysihtml5.da-DK.js",
+"lineCount":3,
+"mappings":"A;AAGC,SAAQ,CAACA,CAAD,CAAG,CACRA,CAAAC,GAAAC,UAAAC,OAAA,CAAsB,OAAtB,CAAA,CAAiC,CAC7BC,YAAa,CACTC,OAAQ,cADC,CAETC,GAAI,cAFK,CAGTC,GAAI,cAHK,CAITC,GAAI,cAJK,CADgB,CAO7BC,SAAU,CACNC,KAAM,KADA,CAENC,OAAQ,QAFF,CAGNC,UAAW,cAHL,CAPmB,CAY7BC,MAAO,CACHC,UAAW,eADR,CAEHC,QAAS,cAFN,CAGHC,QAAS,OAHN,CAIHC,OAAQ,QAJL,CAZsB,CAkB7BC,KAAM,CACFC,OAAQ,kBADN,CAEFC,OAAQ,SAFN,CAlBuB,CAsB7BC,MAAO,CACHF,OAAQ,qBADL,CAEHC,OAAQ,SAFL,CAtBsB,CA0B7BE,KAAM,CACFC,KAAM,cADJ,CA1BuB,CA6B7BC,QAAS,CACLC,MAAO,MADF,CAELC,OAAQ,WAFH,CAGLC,KAAM,UAHD,CAILC,OAAQ,oBAJH;AAKLC,IAAK,UALA,CAMLC,OAAQ,OANH,CAOLC,MAAO,WAPF,CAQLC,MAAO,eARF,CASLC,KAAM,oBATD,CAULC,KAAM,UAVD,CAWLC,OAAQ,QAXH,CA7BoB,CADzB,CAAX,CAAA,CA4CCC,MA5CD;",
+"sources":["bootstrap-wysihtml5.da-DK.unminified.js"],
+"names":["$","fn","wysihtml5","locale","font_styles","normal","h1","h2","h3","emphasis","bold","italic","underline","lists","unordered","ordered","outdent","indent","link","insert","cancel","image","html","edit","colours","black","silver","gray","maroon","red","purple","green","olive","navy","blue","orange","jQuery"]
+}

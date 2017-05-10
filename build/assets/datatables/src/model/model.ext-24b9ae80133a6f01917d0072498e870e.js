@@ -1,0 +1,2 @@
+//# sourceMappingURL=model.ext.js.map
+DataTable.models.ext={afnFiltering:[],afnSortData:[],aoFeatures:[],aTypes:[],fnVersionCheck:DataTable.fnVersionCheck,iApiIndex:0,ofnSearch:{},oApi:{},oStdClasses:{},oJUIClasses:{},oPagination:{},oSort:{},sVersion:DataTable.version,sErrMode:"alert",_oExternConfig:{iNextUnique:0}};

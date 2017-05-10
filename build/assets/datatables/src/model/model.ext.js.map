@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"model.ext.js",
+"lineCount":2,
+"mappings":"A;AAYAA,SAAAC,OAAAC,IAAA,CAAuB,CAqDtB,aAAgB,EArDM,CAqGtB,YAAe,EArGO,CAkJtB,WAAc,EAlJQ,CAoMtB,OAAU,EApMY,CAsNtB,eAAkBF,SAAAG,eAtNI,CA8NtB,UAAa,CA9NS,CAqQtB,UAAa,EArQS,CA6QtB,KAAQ,EA7Qc,CAqRtB,YAAe,EArRO,CA6RtB,YAAe,EA7RO,CA2atB,YAAe,EA3aO,CAoetB,MAAS,EApea,CA8etB,SAAYH,SAAAI,QA9eU,CAsftB,SAAY,OAtfU,CA8ftB,eAAkB,CAEjB,YAAe,CAFE,CA9fI;",
+"sources":["model.ext.unminified.js"],
+"names":["DataTable","models","ext","fnVersionCheck","version"]
+}

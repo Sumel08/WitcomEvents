@@ -1,0 +1,3 @@
+//# sourceMappingURL=aoColumns.bUseRendered.js.map
+oTest.fnStart("aoColumns.bUseRendered");
+$(document).ready(function(){var a=0;$("#example").dataTable({bServerSide:!0,sAjaxSource:"../../../examples/server_side/scripts/server_processing.php",aoColumns:[null,{fnRender:function(b){return 0==a?(a++,"aaa"):b.aData[b.iDataColumn]}},null,null,null]}).fnSettings();oTest.fnWaitTest("Default for bUseRendered is true - rendered data is used for sorting",function(){$("#example thead th:eq(1)").click()},function(){return"aaa"==$("#example tbody tr:eq(0) td:eq(1)").html()});oTest.fnComplete()});

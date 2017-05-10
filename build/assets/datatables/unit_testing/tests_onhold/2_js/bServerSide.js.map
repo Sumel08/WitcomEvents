@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"bServerSide.js",
+"lineCount":2,
+"mappings":"A;AACAA,KAAAC,QAAA,CAAe,aAAf,CAIAC,EAAA,CAAEC,QAAF,CAAAC,MAAA,CAAmB,QAAS,EAAG,CAK9B,IAAIC,EAHSH,CAAA,CAAE,UAAF,CAAAI,UAAAC,CAAyB,CACrC,OAAUC,OAD2B,CAAzBD,CAGGE,WAAA,EAEhBT,MAAAU,OAAA,CACC,+BADD,CAEC,IAFD,CAGC,QAAS,EAAG,CAAE,MAA0C,EAA1C,EAAOL,CAAAM,UAAAC,YAAT,CAHb,CAMAZ,MAAAa,WAAA,EAb8B,CAA/B;",
+"sources":["bServerSide.unminified.js"],
+"names":["oTest","fnStart","$","document","ready","oSettings","dataTable","oTable","gaaData","fnSettings","fnTest","oFeatures","bServerSide","fnComplete"]
+}

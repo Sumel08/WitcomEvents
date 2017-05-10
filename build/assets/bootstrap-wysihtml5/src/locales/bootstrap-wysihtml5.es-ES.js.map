@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"bootstrap-wysihtml5.es-ES.js",
+"lineCount":3,
+"mappings":"A;AAGC,SAAQ,CAACA,CAAD,CAAG,CACRA,CAAAC,GAAAC,UAAAC,OAAA,CAAsB,OAAtB,CAAA,CAAiC,CAC7BC,YAAa,CACPC,OAAQ,cADD,CAEPC,GAAI,eAFG,CAGPC,GAAI,eAHG,CAIPC,GAAI,eAJG,CADgB,CAO7BC,SAAU,CACJC,KAAM,SADF,CAEJC,OAAQ,cAFJ,CAGJC,UAAW,WAHP,CAPmB,CAY7BC,MAAO,CACDC,UAAW,mBADV,CAEDC,QAAS,gBAFR,CAGDC,QAAS,uBAHR,CAIDC,OAAQ,sBAJP,CAZsB,CAkB7BC,KAAM,CACAC,OAAQ,iBADR,CAEAC,OAAQ,UAFR,CAlBuB,CAsB7BC,MAAO,CACDF,OAAQ,sBADP,CAEDC,OAAQ,UAFP,CAtBsB,CA0B7BE,KAAM,CACFC,KAAM,aADJ,CA1BuB,CA6B7BC,QAAS,CACPC,MAAO,OADA,CAEPC,OAAQ,OAFD;AAGPC,KAAM,MAHC,CAIPC,OAAQ,aAJD,CAKPC,IAAK,MALE,CAMPC,OAAQ,cAND,CAOPC,MAAO,OAPA,CAQPC,MAAO,OARA,CASPC,KAAM,aATC,CAUPC,KAAM,MAVC,CAWPC,OAAQ,SAXD,CA7BoB,CADzB,CAAX,CAAA,CA4CCC,MA5CD;",
+"sources":["bootstrap-wysihtml5.es-ES.unminified.js"],
+"names":["$","fn","wysihtml5","locale","font_styles","normal","h1","h2","h3","emphasis","bold","italic","underline","lists","unordered","ordered","outdent","indent","link","insert","cancel","image","html","edit","colours","black","silver","gray","maroon","red","purple","green","olive","navy","blue","orange","jQuery"]
+}

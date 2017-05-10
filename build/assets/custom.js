@@ -1,0 +1,2 @@
+//# sourceMappingURL=custom.js.map
+$(document).ready(function(){$(".submenu > a").click(function(a){a.preventDefault();a=$(this).parent("li");var b=$(this).next("ul");a.hasClass("open")?(b.slideUp(350),a.removeClass("open")):($(".nav > li > ul").slideUp(350),$(".nav > li").removeClass("open"),b.slideDown(350),a.addClass("open"))})});

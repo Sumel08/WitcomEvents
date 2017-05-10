@@ -1,0 +1,3 @@
+//# sourceMappingURL=bootstrap-wysihtml5.sv-SE.js.map
+(function(a){a.fn.wysihtml5.locale["sv-SE"]={font_styles:{normal:"Normal Text",h1:"Rubrik 1",h2:"Rubrik 2",h3:"Rubrik 3"},emphasis:{bold:"Fet",italic:"Kursiv",underline:"Understruken"},lists:{unordered:"Osorterad lista",ordered:"Sorterad lista",outdent:"Minska indrag",indent:"\u00d6ka indrag"},link:{insert:"L\u00e4gg till l\u00e4nk",cancel:"Avbryt"},image:{insert:"L\u00e4gg till Bild",cancel:"Avbryt"},html:{edit:"Redigera HTML"},colours:{black:"Svart",silver:"Silver",gray:"Gr\u00e5",maroon:"Kastaniebrun",
+red:"R\u00f6d",purple:"Lila",green:"Gr\u00f6n",olive:"Olivgr\u00f6n",navy:"Marinbl\u00e5",blue:"Bl\u00e5",orange:"Orange"}}})(jQuery);

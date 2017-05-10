@@ -1,0 +1,3 @@
+//# sourceMappingURL=bootstrap-wysihtml5.es-ES.js.map
+(function(a){a.fn.wysihtml5.locale["es-ES"]={font_styles:{normal:"Texto normal",h1:"T\u00edtulo 1",h2:"T\u00edtulo 2",h3:"T\u00edtulo 3"},emphasis:{bold:"Negrita",italic:"It\u00e1lica",underline:"Subrayado"},lists:{unordered:"Lista desordenada",ordered:"Lista ordenada",outdent:"Eliminar sangr\u00eda",indent:"Agregar sangr\u00eda"},link:{insert:"Insertar enlace",cancel:"Cancelar"},image:{insert:"Insertar im\u00e1gen",cancel:"Cancelar"},html:{edit:"Editar HTML"},colours:{black:"Negro",silver:"Plata",
+gray:"Gris",maroon:"Marr\u00f3n",red:"Rojo",purple:"P\u00farpura",green:"Verde",olive:"Oliva",navy:"Azul Marino",blue:"Azul",orange:"Naranja"}}})(jQuery);

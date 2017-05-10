@@ -75,7 +75,7 @@
                         
                     </div>
                     <div class="panel-body">
-                        <g:each var="chair" in="${chairs}">
+                        <g:each var="chair" in="${event.chairs}">
                             <div class="col-md-12">
                                 <div class="col-md-offset-1 col-md-3">
                                     <img src="${chair.people.photo.url}" style="width: 100px; height: 100px">

@@ -1,0 +1,3 @@
+//# sourceMappingURL=bootstrap-wysihtml5.da-DK.js.map
+(function(a){a.fn.wysihtml5.locale["da-DK"]={font_styles:{normal:"Normal tekst",h1:"Overskrift 1",h2:"Overskrift 2",h3:"Overskrift 3"},emphasis:{bold:"Fed",italic:"Kursiv",underline:"Understreget"},lists:{unordered:"Uordnet liste",ordered:"Ordnet liste",outdent:"Udryk",indent:"Indryk"},link:{insert:"Inds\u00e6t Link",cancel:"Annuler"},image:{insert:"Inds\u00e6t billede",cancel:"Annuler"},html:{edit:"Rediger HTML"},colours:{black:"Sort",silver:"S\u00f8lv",gray:"Gr\u00e5",maroon:"M\u00f8rker\u00f8d",
+red:"R\u00f8d",purple:"Lilla",green:"Gr\u00f8n",olive:"Lysegr\u00f8n",navy:"M\u00f8rkebl\u00e5",blue:"Bl\u00e5",orange:"Orange"}}})(jQuery);

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"2840-restore-table-width.js",
+"lineCount":2,
+"mappings":"A;AACAA,KAAAC,QAAA,CAAe,yCAAf,CAEAC,EAAA,CAAEC,QAAF,CAAAC,MAAA,CAAmB,QAAS,EAAG,CAC9BD,QAAAE,OAAA,CAAkB,EAClBH,EAAA,CAAE,UAAF,CAAAI,UAAA,CAAyB,CACxB,SAAY,MADY,CAExB,cAAiB,MAFO,CAAzB,CAIAJ,EAAA,CAAE,UAAF,CAAAI,UAAA,EAAAC,UAAA,EAEAP,MAAAQ,OAAA,CACC,qBADD,CAEC,IAFD,CAGC,QAAS,EAAG,CAAE,MAAgC,KAAhC,EAAON,CAAA,CAAE,UAAF,CAAAO,MAAA,EAAT,CAHb,CAMAT,MAAAU,WAAA,EAd8B,CAA/B;",
+"sources":["2840-restore-table-width.unminified.js"],
+"names":["oTest","fnStart","$","document","ready","cookie","dataTable","fnDestroy","fnTest","width","fnComplete"]
+}

@@ -1,0 +1,2 @@
+//# sourceMappingURL=2440.js.map
+oTest.fnStart("Info element with display all");$(document).ready(function(){var a=$("#example").dataTable({bServerSide:!0,sAjaxSource:"../../../examples/server_side/scripts/server_processing.php"});a.fnSettings()._iDisplayLength=-1;a.oApi._fnCalculateEnd(a.fnSettings());a.fnDraw();oTest.fnWaitTest("Check length is correct when -1 length given",null,function(){return"Showing 1 to 57 of 57 entries"==document.getElementById("example_info").innerHTML});oTest.fnComplete()});

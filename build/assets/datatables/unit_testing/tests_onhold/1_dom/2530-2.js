@@ -1,0 +1,2 @@
+//# sourceMappingURL=2530-2.js.map
+oTest.fnStart("User given with is left when no scrolling");$(document).ready(function(){$("#example")[0].style.width="80%";$("#example").dataTable();oTest.fnTest("Check user width is left",null,function(){return 640==$("#example").width()});oTest.fnComplete()});

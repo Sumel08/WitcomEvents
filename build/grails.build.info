@@ -1,0 +1,6 @@
+#Sun, 07 May 2017 20:56:10 -0500
+
+grails.env=production
+info.app.name=WitcomEvents
+info.app.version=0.1
+info.app.grailsVersion=3.1.1

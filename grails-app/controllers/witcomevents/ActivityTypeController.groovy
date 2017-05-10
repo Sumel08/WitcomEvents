@@ -4,6 +4,7 @@ import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
 import grails.plugin.springsecurity.annotation.Secured
+import grails.converters.JSON
 
 @Transactional(readOnly = false)
 class ActivityTypeController {
@@ -130,6 +131,7 @@ class ActivityTypeController {
 
     @Secured(['ROLE_USER'])
     def saveActivity() {
+        println(params)
         def activity = new ActivityType()
 
         def user = springSecurityService.currentUser
@@ -138,6 +140,8 @@ class ActivityTypeController {
         activity.name = params.name
         activity.description = params.description
         activity.event = event
+
+        activity.show = params.show_app != null
 
         if(!activity.save()) {
             activity.errors.allErrors.each {
@@ -169,6 +173,7 @@ class ActivityTypeController {
 
         activity.name = params.name
         activity.description = params.description
+        activity.show = params.show_app != null
 
         if(!activity.save()) {
             activity.errors.allErrors.each {
@@ -177,5 +182,20 @@ class ActivityTypeController {
         }
 
         redirect(action: "activities")
+    }
+
+    @Secured(['permitAll'])
+    def getActivitiesType() {
+
+        ArrayList<String> nothing = new ArrayList<>()
+
+        try {
+            def event = Event.findByCode(params.id)
+            def activitiesType = ActivityType.findAllByEvent(event)
+
+            render activitiesType as JSON
+        } catch(Exception e) {
+            render nothing as JSON
+        }
     }
 }

@@ -1,0 +1,5 @@
+//# sourceMappingURL=oLanguage.sSearch.js.map
+oTest.fnStart("oLanguage.sSearch");
+$(document).ready(function(){var b=$("#example").dataTable({aaData:gaaData}),a=b.fnSettings();oTest.fnTest("Search language is 'Search:' by default",null,function(){return"Search:"==a.oLanguage.sSearch});oTest.fnTest("A label input is used",null,function(){return 1==$("label",a.aanFeatures.f[0]).length});oTest.fnTest("Search language default is in the DOM",null,function(){return"Search: "==$("label",a.aanFeatures.f[0]).text()});oTest.fnTest("Search language can be defined",function(){oSession.fnRestore();
+b=$("#example").dataTable({aaData:gaaData,oLanguage:{sSearch:"unit test"}});a=b.fnSettings()},function(){return"unit test"==a.oLanguage.sSearch});oTest.fnTest("Info language definition is in the DOM",null,function(){return-1!==$("label",a.aanFeatures.f[0]).text().indexOf("unit test")});oTest.fnTest("Blank search has a no (separator) inserted",function(){oSession.fnRestore();b=$("#example").dataTable({aaData:gaaData,oLanguage:{sSearch:""}});a=b.fnSettings()},function(){return 1==document.getElementById("example_filter").childNodes.length});
+oTest.fnComplete()});

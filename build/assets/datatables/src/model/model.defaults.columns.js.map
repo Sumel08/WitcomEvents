@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"model.defaults.columns.js",
+"lineCount":2,
+"mappings":"A;AAMAA,SAAAC,SAAAC,QAAA,CAA6B,CAmC5B,UAAa,IAnCe,CAwE5B,UAAa,CAAE,KAAF,CAAS,MAAT,CAxEe,CAuG5B,YAAe,CAAA,CAvGa,CAsI5B,UAAa,CAAA,CAtIe,CAuJ5B,aAAgB,CAAA,CAvJY,CAsL5B,SAAY,CAAA,CAtLgB,CAoN5B,cAAiB,IApNW,CA0O5B,SAAY,IA1OgB,CA6Q5B,UAAc,EA7Qc,CA0W5B,MAAS,IA1WmB,CA+a5B,QAAW,IA/aiB,CAqc5B,UAAa,IArce,CAse5B,OAAU,EAtekB,CAsgB5B,gBAAmB,EAtgBS,CA+iB5B,gBAAmB,IA/iBS,CAylB5B,MAAS,EAzlBmB,CAioB5B,cAAiB,KAjoBW,CAmqB5B,OAAU,IAnqBkB,CA0sB5B,MAAS,IA1sBmB,CA8uB5B,OAAU,IA9uBkB;",
+"sources":["model.defaults.columns.unminified.js"],
+"names":["DataTable","defaults","columns"]
+}

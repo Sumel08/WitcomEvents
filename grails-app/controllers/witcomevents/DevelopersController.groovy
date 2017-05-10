@@ -3,6 +3,9 @@ package witcomevents
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
+import grails.plugin.springsecurity.annotation.Secured
+import grails.converters.JSON
+
 @Transactional(readOnly = true)
 class DevelopersController {
 
@@ -102,6 +105,23 @@ class DevelopersController {
                 redirect action: "index", method: "GET"
             }
             '*'{ render status: NOT_FOUND }
+        }
+    }
+
+    @Secured(['permitAll'])
+    def getDevelopers() {
+
+        ArrayList<String> nothing = new ArrayList<>()
+
+        try {
+
+            def event = Event.findByCode(params.id)
+            def developers = Developers.findAllByEvent(event)
+
+            render developers as JSON
+        } catch (Exception e) {
+            println(e)
+            render nothing as JSON       
         }
     }
 }

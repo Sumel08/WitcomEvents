@@ -1,0 +1,4 @@
+//# sourceMappingURL=oLanguage.sZeroRecords.js.map
+oTest.fnStart("oLanguage.sZeroRecords");
+$(document).ready(function(){var a=$("#example").dataTable(),b=a.fnSettings();oTest.fnTest("Zero records language is 'No matching records found' by default",null,function(){return"No matching records found"==b.oLanguage.sZeroRecords});oTest.fnTest("Text is shown when empty table (after filtering)",function(){a.fnFilter("nothinghere")},function(){return"No matching records found"==$("#example tbody tr td")[0].innerHTML});oTest.fnTest("Zero records language can be defined",function(){oSession.fnRestore();
+a=$("#example").dataTable({oLanguage:{sZeroRecords:"unit test"}});b=a.fnSettings()},function(){return"unit test"==b.oLanguage.sZeroRecords});oTest.fnTest("Text is shown when empty table (after filtering)",function(){a.fnFilter("nothinghere2")},function(){return"unit test"==$("#example tbody tr td")[0].innerHTML});oTest.fnComplete()});

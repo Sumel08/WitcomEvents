@@ -3,6 +3,9 @@ package witcomevents
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
+import grails.plugin.springsecurity.annotation.Secured
+import grails.converters.JSON
+
 @Transactional(readOnly = true)
 class PlaceSocialNetworksController {
 
@@ -102,6 +105,23 @@ class PlaceSocialNetworksController {
                 redirect action: "index", method: "GET"
             }
             '*'{ render status: NOT_FOUND }
+        }
+    }
+
+    @Secured(['permitAll'])
+    def getPlaceSocialNetworks() {
+
+        ArrayList<String> nothing = new ArrayList<>()
+
+        try {
+            def placeCategories = PlaceCategory.findAllByEvent(Event.findByCode(params.id))
+            def places = Place.findAllByPlaceCategoryInList(placeCategories)
+            def placeSocialNetworks = PlaceSocialNetworks.findAllByPlaceInList(places)
+
+            render placeSocialNetworks as JSON
+        } catch (Exception e) {
+            println(e)
+            render nothing as JSON
         }
     }
 }

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"model.row.js",
+"lineCount":2,
+"mappings":"A;AASAA,SAAAC,OAAAC,KAAA,CAAwB,CAMvB,IAAO,IANgB,CAiBvB,OAAU,EAjBa,CA+BvB,WAAc,EA/BS,CA2CvB,UAAa,EA3CU,CAqDvB,YAAe,EArDQ;",
+"sources":["model.row.unminified.js"],
+"names":["DataTable","models","oRow"]
+}

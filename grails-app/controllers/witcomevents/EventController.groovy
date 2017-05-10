@@ -351,7 +351,7 @@ class EventController {
 
     @Secured(['permitAll'])
     def getEvent() {
-        def event = Event.findById(params.id)
+        def event = Event.findAllByCode(params.id)
 
         render event as JSON
     }

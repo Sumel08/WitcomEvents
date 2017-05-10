@@ -139,6 +139,7 @@ class PlaceCategoryController {
         placeCategory.category = params.category
         placeCategory.description = params.description
         placeCategory.event = event
+        placeCategory.show = params.show_app != null
 
         if(!placeCategory.save()) {
             placeCategory.errors.allErrors.each {
@@ -172,6 +173,7 @@ class PlaceCategoryController {
         def placeCategory = PlaceCategory.findByIdAndEvent(params.idPlaceCategory, event)
         placeCategory.category = params.category
         placeCategory.description = params.description
+        placeCategory.show = params.show_app != null
 
         if(!placeCategory.save()) {
             placeCategory.errors.allErrors.each {
@@ -184,8 +186,16 @@ class PlaceCategoryController {
 
     @Secured(['permitAll'])
     def getPlaceCategories() {
-        def placeCategories = PlaceCategory.findAll()
 
-        render placeCategories as JSON
+        ArrayList<String> nothing = new ArrayList<>()
+
+        try {
+            def placeCategories = PlaceCategory.findAllByEvent(Event.findByCode(params.id))
+
+            render placeCategories as JSON
+        } catch (Exception e) {
+            println(e)
+            render nothing as JSON
+        }
     }
 }

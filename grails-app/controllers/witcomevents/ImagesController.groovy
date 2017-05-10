@@ -128,8 +128,15 @@ class ImagesController {
 
     @Secured(['permitAll'])
     def getImages() {
-        def images = Imagenes.findAll()
+        def images = Images.findAll()
 
         render images as JSON
+    }
+
+    @Secured(['permitAll'])
+    def getImage() {
+        def image = Images.findById(params.id)
+
+        render image as JSON
     }
 }

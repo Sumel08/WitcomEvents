@@ -1,0 +1,3 @@
+//# sourceMappingURL=bInfo.js.map
+oTest.fnStart("bInfo");
+$(document).ready(function(){$("#example").dataTable();oTest.fnTest("Info div exists by default",null,function(){return null!=document.getElementById("example_info")});oTest.fnTest("Info can be disabled",function(){oSession.fnRestore();$("#example").dataTable({bInfo:!1})},function(){return null==document.getElementById("example_info")});oTest.fnTest("Info enabled override",function(){oSession.fnRestore();$("#example").dataTable({bInfo:!0})},function(){return null!=document.getElementById("example_info")});oTest.fnComplete()});

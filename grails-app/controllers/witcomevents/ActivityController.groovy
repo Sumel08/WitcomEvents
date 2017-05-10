@@ -3,6 +3,9 @@ package witcomevents
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
+import grails.plugin.springsecurity.annotation.Secured
+import grails.converters.JSON
+
 @Transactional(readOnly = true)
 class ActivityController {
 
@@ -102,6 +105,24 @@ class ActivityController {
                 redirect action: "index", method: "GET"
             }
             '*'{ render status: NOT_FOUND }
+        }
+    }
+
+    @Secured(['permitAll'])
+    def getActivities() {
+        
+        ArrayList<String> nothing = new ArrayList<>()
+
+        try {
+
+            def event = Event.findByCode(params.id)
+            def activityType = ActivityType.findAllByEvent(event)
+            def activities = Activity.findAllByActivityTypeInList(activityType)
+
+            render activities as JSON
+        } catch (Exception e) {
+            println(e)
+            render nothing as JSON
         }
     }
 }

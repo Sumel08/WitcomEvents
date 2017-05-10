@@ -1,0 +1,2 @@
+//# sourceMappingURL=sAjaxSource.js.map
+oTest.fnStart("sAjaxSource");$(document).ready(function(){var a=$("#example").dataTable({sAjaxSource:"../../../examples/ajax/sources/arrays.txt",bDeferRender:!0}).fnSettings();oTest.fnWaitTest("Server side is off by default",null,function(){return"../../../examples/ajax/sources/arrays.txt"==a.sAjaxSource});oTest.fnComplete()});

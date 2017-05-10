@@ -1,0 +1,2 @@
+//# sourceMappingURL=aoColumns.sName.js.map
+oTest.fnStart("aoColumns.sName");$(document).ready(function(){var a=$("#example").dataTable({aaData:gaaData,aoColumns:[null,null,null,{sName:"unit test"},null]}).fnSettings();oTest.fnTest("Names are stored in the columns object",null,function(){return"unit test"==a.aoColumns[3].sName});oTest.fnComplete()});

@@ -3,6 +3,9 @@ package witcomevents
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
+import grails.plugin.springsecurity.annotation.Secured
+import grails.converters.JSON
+
 @Transactional(readOnly = true)
 class StreamsController {
 
@@ -102,6 +105,21 @@ class StreamsController {
                 redirect action: "index", method: "GET"
             }
             '*'{ render status: NOT_FOUND }
+        }
+    }
+
+    @Secured(['permitAll'])
+    def getStreams() {
+
+        ArrayList<String> nothing = new ArrayList<>()
+
+        try {
+            def streams = Streams.findAllByEvent(Event.findByCode(params.id))
+
+            render streams as JSON
+        } catch (Exception e) {
+            println(e)
+            render nothing as JSON
         }
     }
 }

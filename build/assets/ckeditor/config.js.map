@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"config.js",
+"lineCount":6,
+"mappings":"A;;;;;AAKAA,QAAAC,aAAA,CAAwBC,QAAQ,CAAEC,CAAF,CAAW;",
+"sources":["config.unminified.js"],
+"names":["CKEDITOR","editorConfig","CKEDITOR.editorConfig","config"]
+}

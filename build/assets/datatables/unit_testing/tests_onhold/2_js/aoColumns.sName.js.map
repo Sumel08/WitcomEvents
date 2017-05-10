@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"aoColumns.sName.js",
+"lineCount":2,
+"mappings":"A;AACAA,KAAAC,QAAA,CAAe,iBAAf,CAIAC,EAAA,CAAEC,QAAF,CAAAC,MAAA,CAAmB,QAAS,EAAG,CAY9B,IAAIC,EAVSH,CAAA,CAAE,UAAF,CAAAI,UAAAC,CAAyB,CACrC,OAAUC,OAD2B,CAErC,UAAa,CACZ,IADY,CAEZ,IAFY,CAGZ,IAHY,CAIZ,CAAE,MAAS,WAAX,CAJY,CAKZ,IALY,CAFwB,CAAzBD,CAUGE,WAAA,EAEhBT,MAAAU,OAAA,CACC,wCADD,CAEC,IAFD,CAGC,QAAS,EAAG,CAAE,MAAsC,WAAtC,EAAOL,CAAAM,UAAA,CAAoB,CAApB,CAAAC,MAAT,CAHb,CAOAZ,MAAAa,WAAA,EArB8B,CAA/B;",
+"sources":["aoColumns.sName.unminified.js"],
+"names":["oTest","fnStart","$","document","ready","oSettings","dataTable","oTable","gaaData","fnSettings","fnTest","aoColumns","sName","fnComplete"]
+}

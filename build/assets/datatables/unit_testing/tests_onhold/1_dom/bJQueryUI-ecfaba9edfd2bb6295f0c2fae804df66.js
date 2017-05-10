@@ -1,0 +1,3 @@
+//# sourceMappingURL=bJQueryUI.js.map
+oTest.fnStart("bJQueryUI");
+$(document).ready(function(){$("#example").dataTable({bJQueryUI:!0});oTest.fnTest("Header elements are fully wrapped by DIVs",null,function(){var a=!0;$("#example thead th").each(function(){1<this.childNodes&&(a=!1)});return a});oTest.fnTest("One div for each header element",null,function(){return 5==$("#example thead th div").length});oTest.fnTest("One span for each header element, nested as child of div",null,function(){return 5==$("#example thead th div>span").length});oTest.fnComplete()});

@@ -61,6 +61,19 @@
                                       </div>
                                     </div>
 
+                                    <div class="form-group">
+                                      <label class="col-sm-2 control-label" style="margin-top: 10px;">Show in app</label>
+                                      <div class="col-sm-10 " style="margin-top: 10px;">
+                                        <g:if test="${placeCategory.show}">
+                                            <input type="checkbox" value="show" name="show_app" checked>
+                                        </g:if>
+                                        <g:else>
+                                            <input type="checkbox" value="show" name="show_app">
+                                        </g:else>
+
+                                      </div>
+                                    </div>
+
                                     <g:hiddenField name="idPlaceCategory" id="idPlaceCategory" value="${placeCategory.id}"/>
 
                                   <div class="form-group">

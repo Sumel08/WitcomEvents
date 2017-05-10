@@ -4,6 +4,7 @@ class PlaceCategory {
 
     String category
 	String description
+    Boolean show
 
 	static hasMany = [places: Place]
 	static belongsTo = [event: Event]
@@ -15,5 +16,6 @@ class PlaceCategory {
 
     static constraints = {
     	description(maxSize:1000)
+        show nullable:true
     }
 }

@@ -1,0 +1,4 @@
+//# sourceMappingURL=bAutoWidth.js.map
+oTest.fnStart("bAutoWidth");
+$(document).ready(function(){var a=$("#example").dataTable(),b=a.fnSettings();oTest.fnTest("Auto width is enabled by default",null,function(){return b.oFeatures.bAutoWidth});oTest.fnTest("First column has a width assigned to it",null,function(){return $("#example thead th:eq(0)").attr("style").match(/width/i)});oTest.fnTest("Auto width can be disabled",function(){oSession.fnRestore();a=$("#example").dataTable({bAutoWidth:!1});b=a.fnSettings()},function(){return 0==b.oFeatures.bAutoWidth});oTest.fnTest("First column does not have a width assigned to it",
+null,function(){return null==$("#example thead th:eq(0)").attr("style")});oTest.fnTest("Auto width enabled override",function(){oSession.fnRestore();a=$("#example").dataTable({bAutoWidth:!0});b=a.fnSettings()},function(){return b.oFeatures.bAutoWidth});oTest.fnComplete()});

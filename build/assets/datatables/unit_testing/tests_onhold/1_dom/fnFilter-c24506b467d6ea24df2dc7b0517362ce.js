@@ -1,0 +1,2 @@
+//# sourceMappingURL=fnFilter.js.map
+oTest.fnStart("fnFilter");$(document).ready(function(){$("#example").dataTable().fnFilter(1);oTest.fnTest("Filtering with a non-string input is valid",null,function(){return"Showing 1 to 10 of 32 entries (filtered from 57 total entries)"==$("#example_info").html()});oTest.fnComplete()});

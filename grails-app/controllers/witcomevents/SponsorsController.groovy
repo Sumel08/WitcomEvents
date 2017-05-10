@@ -3,6 +3,9 @@ package witcomevents
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
+import grails.plugin.springsecurity.annotation.Secured
+import grails.converters.JSON
+
 @Transactional(readOnly = true)
 class SponsorsController {
 
@@ -102,6 +105,22 @@ class SponsorsController {
                 redirect action: "index", method: "GET"
             }
             '*'{ render status: NOT_FOUND }
+        }
+    }
+
+    @Secured(['permitAll'])
+    def getSponsors() {
+
+        ArrayList<String> nothing = new ArrayList<>()
+
+        try {
+
+            def sponsors = Sponsors.findAllByEvento(Event.findByCode(params.id))
+
+            render sponsors as JSON
+        } catch (Exception e) {
+            println(e)
+            render nothing as JSON
         }
     }
 }

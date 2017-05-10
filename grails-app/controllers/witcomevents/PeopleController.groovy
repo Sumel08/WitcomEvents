@@ -283,8 +283,16 @@ class PeopleController {
 
     @Secured(['permitAll'])
     def getPeople() {
-        def people = People.findAll()
 
-        render people as JSON
+        ArrayList<String> nothing = new ArrayList<>()
+
+        try {
+            def people = People.findAllByEvent(Event.findByCode(params.id))
+
+            render people as JSON
+        } catch (Exception e) {
+            println(e)
+            render nothing as JSON
+        }
     }
 }

@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"model.search.js",
+"lineCount":2,
+"mappings":"A;AAQAA,SAAAC,OAAAC,QAAA,CAA2B,CAM1B,iBAAoB,CAAA,CANM,CAa1B,QAAW,EAbe,CAsB1B,OAAU,CAAA,CAtBgB,CA6B1B,OAAU,CAAA,CA7BgB;",
+"sources":["model.search.unminified.js"],
+"names":["DataTable","models","oSearch"]
+}

@@ -1,0 +1,2 @@
+//# sourceMappingURL=aoColumns.bSearchable.js.map
+oTest.fnStart("aoColumns.bSeachable");$(document).ready(function(){var a=$("#example").dataTable({bServerSide:!0,sAjaxSource:"../../../examples/server_side/scripts/server_processing.php"});a.fnSettings();oTest.fnWaitTest("Columns are searchable by default",function(){a.fnFilter("Camino")},function(){return"Camino 1.0"==$("#example tbody tr:eq(0) td:eq(1)").html()});oTest.fnComplete()});

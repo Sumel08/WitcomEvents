@@ -1,0 +1,2 @@
+//# sourceMappingURL=bServerSide.js.map
+oTest.fnStart("bServerSide");$(document).ready(function(){var a=$("#example").dataTable({bServerSide:!0,sAjaxSource:"../../../examples/server_side/scripts/server_processing.php"}).fnSettings();oTest.fnWaitTest("Server side can be set to on",null,function(){return 1==a.oFeatures.bServerSide});oTest.fnComplete()});

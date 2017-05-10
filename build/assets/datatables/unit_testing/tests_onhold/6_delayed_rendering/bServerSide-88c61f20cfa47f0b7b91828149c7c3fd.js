@@ -1,0 +1,2 @@
+//# sourceMappingURL=bServerSide.js.map
+oTest.fnStart("bServerSide");$(document).ready(function(){var a=$("#example").dataTable({sAjaxSource:"../../../examples/ajax/sources/arrays.txt",bDeferRender:!0}).fnSettings();oTest.fnWaitTest("Server side is off by default",null,function(){return 0==a.oFeatures.bServerSide});oTest.fnComplete()});

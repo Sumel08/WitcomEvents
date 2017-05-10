@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"tables.js",
+"lineCount":2,
+"mappings":"A;AAAAA,CAAA,CAAEC,QAAF,CAAAC,MAAA,CAAkB,QAAQ,EAAG,CACrBF,CAAA,CAAE,UAAF,CAAAG,UAAA,EADqB,CAA7B;",
+"sources":["tables.unminified.js"],
+"names":["$","document","ready","dataTable"]
+}

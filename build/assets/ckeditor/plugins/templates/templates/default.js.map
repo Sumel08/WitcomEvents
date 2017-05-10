@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"default.js",
+"lineCount":3,
+"mappings":"A;AAIAA,QAAAC,aAAA,CAAsB,SAAtB,CAAgC,CAACC,WAAWF,QAAAG,OAAA,CAAgBH,QAAAI,QAAAC,QAAA,CAAyB,WAAzB,CAAhB,CAAsD,mBAAtD,CAAZ,CAAuFC,UAAU,CAAC,CAACC,MAAM,iBAAP,CAAyBC,MAAM,eAA/B,CAA+CC,YAAY,+DAA3D,CAA2HC,KAAK,8HAAhI,CAAD,CAAiQ,CAACH,MAAM,kBAAP,CAA0BC,MAAM,eAAhC,CAAgDC,YAAY,2EAA5D;AAClYC,KAAK,kQAD6X,CAAjQ,CACwI,CAACH,MAAM,gBAAP,CAAwBC,MAAM,eAA9B,CAA8CC,YAAY,qCAA1D,CAAgGC,KAAK,4ZAArG,CADxI,CAAjG,CAAhC;",
+"sources":["default.unminified.js"],
+"names":["CKEDITOR","addTemplates","imagesPath","getUrl","plugins","getPath","templates","title","image","description","html"]
+}
